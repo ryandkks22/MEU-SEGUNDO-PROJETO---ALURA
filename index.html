@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <title>Mistério no Oceano - A Maldição do Horizonte</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0 - Introdução -->
+        <div class="passo ativo" id="passo-0">
+            <img src="CENARIO-INICIAL.jpg" alt="Navio no oceano sob nevoeiro">
+            <p>
+                O ano é 1922. A tripulação do navio <strong>"Aurora do Sul"</strong> está perdida no meio de um nevoeiro denso. O capitão desapareceu, e eventos estranhos começaram a ocorrer. Você, como imediato, deve tomar decisões para descobrir a verdade e salvar a todos.
+            </p>
+            <button class="btn-proximo" data-proximo="1">Explorar o convés em busca de pistas</button>
+            <button class="btn-proximo" data-proximo="2">Organizar a tripulação para tentar sair do nevoeiro</button>
+        </div>
+
+        <!-- Passo 1 -->
+        <div class="passo" id="passo-1">
+            <img src="convés-nevoa.jpg" alt="Convés coberto por névoa">
+            <p>
+                No convés, você encontra marcas estranhas e o diário do capitão caído perto da entrada de sua cabine. Decisões precisam ser tomadas.
+            </p>
+            <button class="btn-proximo" data-proximo="3">Ler o diário</button>
+            <button class="btn-proximo" data-proximo="4">Entrar na cabine do capitão</button>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="passo" id="passo-2">
+            <img src="tripulacao-assustada.jpg" alt="Tripulação em pânico">
+            <p>
+                A tripulação está em pânico. Alguns dizem ouvir vozes no nevoeiro, enquanto outros relatam ver sombras na água. Como líder, você precisa agir.
+            </p>
+            <button class="btn-proximo" data-proximo="5">Dividir a tripulação em equipes de busca</button>
+            <button class="btn-proximo" data-proximo="6">Investigar a sala de máquinas</button>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="passo" id="passo-3">
+            <img src="diario-capitao.jpg" alt="Diário do capitão">
+            <p>
+                O diário menciona "uma sombra no horizonte" e um mal despertado por uma relíquia encontrada em uma expedição. Suas escolhas determinarão o destino da tripulação.
+            </p>
+            <button class="btn-proximo" data-proximo="7">Buscar a sombra no horizonte</button>
+            <button class="btn-proximo" data-proximo="8">Continuar explorando o navio</button>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="passo" id="passo-4">
+            <img src="cabine-capitao.jpg" alt="Cabine do capitão">
+            <p>
+                A cabine está desorganizada. Há mapas rasgados, cartas espalhadas e um cofre pequeno com um símbolo estranho. O que fazer?
+            </p>
+            <button class="btn-proximo" data-proximo="9">Tentar abrir o cofre</button>
+            <button class="btn-proximo" data-proximo="2">Reunir a tripulação</button>
+        </div>
+
+        <!-- Passo 5 -->
+        <div class="passo" id="passo-5">
+            <img src="equipe-busca.jpg" alt="Marinheiros explorando o navio">
+            <p>
+                Durante a busca, um marinheiro desaparecido é encontrado. Ele está em choque, falando sobre "uma sombra que os observa". A tensão aumenta.
+            </p>
+            <button class="btn-proximo" data-proximo="10">Investigar a sombra</button>
+            <button class="btn-proximo" data-proximo="6">Ir para a sala de máquinas</button>
+        </div>
+
+        <!-- Passo 6 -->
+        <div class="passo" id="passo-6">
+            <img src="sala-maquinas.jpg" alt="Sala de máquinas do navio">
+            <p>
+                A sala de máquinas está danificada. Há sinais de sabotagem. As luzes piscam, e um som metálico ecoa do corredor.
+            </p>
+            <button class="btn-proximo" data-proximo="11">Investigar o som</button>
+            <button class="btn-proximo" data-proximo="12">Tentar consertar o motor</button>
+        </div>
+
+        <!-- Passo 7 -->
+        <div class="passo" id="passo-7">
+            <img src="horizonte-nevoa.jpg" alt="Figura no horizonte">
+            <p>
+                Você avista uma figura imóvel no horizonte, que parece estar cada vez mais próxima. O que fazer?
+            </p>
+            <button class="btn-proximo" data-proximo="13">Confrontar a figura</button>
+            <button class="btn-proximo" data-proximo="8">Recuar para o interior do navio</button>
+        </div>
+
+        <!-- Passo 8 -->
+        <div class="passo" id="passo-8">
+            <img src="interior-navio.jpg" alt="Interior do navio">
+            <p>
+                Ao explorar o interior do navio, você encontra uma relíquia estranha com inscrições antigas. Ela parece emitir um leve brilho.
+            </p>
+            <button class="btn-proximo" data-proximo="9">Estudar a relíquia</button>
+            <button class="btn-proximo" data-proximo="2">Guardar a relíquia e sair</button>
+        </div>
+
+        <!-- Passo 9 -->
+        <div class="passo" id="passo-9">
+            <img src="cofre-navio.jpg" alt="Cofre antigo">
+            <p>
+                Dentro do cofre, você encontra uma chave antiga. Ela parece corresponder a um compartimento escondido no navio.
+            </p>
+            <button class="btn-proximo" data-proximo="14">Usar a chave no compartimento</button>
+            <button class="btn-proximo" data-proximo="4">Explorar mais na cabine</button>
+        </div>
+
+        <!-- Passo 10 -->
+        <div class="passo" id="passo-10">
+            <img src="sombra-mar.jpg" alt="Sombra no mar">
+            <p>
+                Você e sua equipe chegam perto da sombra, mas ela desaparece na água. De repente, ouve-se um grito vindo do convés.
+            </p>
+            <button class="btn-proximo" data-proximo="12">Correr para o convés</button>
+            <button class="btn-proximo" data-proximo="13">Investigar a água</button>
+        </div>
+
+        <!-- Passo 11 -->
+        <div class="passo" id="passo-11">
+            <img src="som-metalico.jpg" alt="Som metálico na sala de máquinas">
+            <p>
+                Você descobre um tripulante preso no fundo da sala de máquinas. Ele diz que algo o empurrou lá dentro. As suspeitas aumentam.
+            </p>
+            <button class="btn-proximo" data-proximo="10">Investigar a sala</button>
+            <button class="btn-proximo" data-proximo="12">Tentar consertar o motor</button>
+        </div>
+
+        <!-- Passo Final -->
+        <div class="passo" id="passo-15">
+            <img src="final-navio.jpg" alt="Final da aventura no navio">
+            <p>
+                Após enfrentar desafios e tomar decisões difíceis, você descobre que o navio está preso em um ciclo temporal causado pela maldição da relíquia. Com coragem, você quebra o ciclo e liberta a tripulação. Parabéns!
+            </p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
